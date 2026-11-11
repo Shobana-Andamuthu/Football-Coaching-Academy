@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Age Finder — Kickstart Football Academy</title>
+  <meta name="description" content="Find the right football program for your child's age and goal.">
+  <link rel="icon" type="image/svg+xml" href="assets/images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    try {
+      var d = document.documentElement;
+      d.dataset.theme = localStorage.getItem('theme') || 'light';
+      d.dir = localStorage.getItem('dir') || 'ltr';
+    } catch(e) {}
+  </script>
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body data-page="home2" data-layout="site">
+  <div id="loader" role="status" aria-live="polite">
+    <div class="ld">
+      <svg viewBox="0 0 64 64" aria-hidden="true">
+        <path d="M32 3 56 11v20c0 15-10 26-24 30C18 57 8 46 8 31V11z" fill="#0B1F3A" stroke="#C6F432" stroke-width="2"/>
+        <circle cx="32" cy="30" r="14" fill="#C6F432"/>
+        <path d="m32 21 7 5-3 8h-8l-3-8z" fill="#0B1F3A"/>
+        <path d="M32 16v5M39 26l5-2M36 34l3 5M28 34l-3 5M25 26l-5-2" stroke="#0B1F3A" stroke-width="2" stroke-linecap="round"/>
+      </svg>
+      <b>KICKSTART</b>
+      <div class="ld-bar"><i></i></div>
+      <span class="sr">Loading…</span>
+    </div>
+  </div>
+  <noscript><style>#loader{display:none}</style></noscript>
+
+  <div id="site-nav"></div>
+
+  <main>
+    <section class="h2hero">
+      <img src="assets/images/remote/pexels-29719221.jpeg" alt="" role="presentation" style="object-position:center" loading="eager" decoding="async">
+      <div class="wrap">
+        <span class="eyebrow">Kickstart Football Academy</span>
+        <h1>Find your player’s perfect program</h1>
+        <p class="lead">Choose an age group and a goal. We suggest the right program, timing and fee in one step.</p>
+        <form class="mat" id="matcher">
+          <select id="m-age" aria-label="Age group">
+            <option value="">Age group</option>
+            <option value="a">4–6</option>
+            <option value="b">7–9</option>
+            <option value="c">10–12</option>
+            <option value="d">13–16</option>
+          </select>
+          <select id="m-goal" aria-label="Goal">
+            <option value="fun">Fun and fitness</option>
+            <option value="comp">Competitive play</option>
+            <option value="gk">Goalkeeping</option>
+          </select>
+          <button class="btn btn-p" type="submit">Match me</button>
+          <output id="m-out" role="status"></output>
+        </form>
+      </div>
+    </section>
+
+    <section class="band dk">
+      <div class="wrap">
+        <div><b>4</b><span>Age groups</span></div>
+        <div><b>300+</b><span>Players trained</span></div>
+        <div><b>1:8</b><span>Coach ratio</span></div>
+        <div><b>12</b><span>Licensed coaches</span></div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">Programs</span>
+          <h2>Programs for every age</h2>
+          <p>From first kicks to league football.</p>
+        </div>
+
+        <article class="crow">
+          <img src="assets/images/home/h2-little-kickers.jpg" alt="Little Kickers players training" width="800" height="800" style="object-position:center 30%" loading="lazy" decoding="async">
+          <div>
+            <span class="eyebrow" style="margin:0">Ages 4–6</span>
+            <h3>Little Kickers</h3>
+            <p>Fun ball games that build balance, coordination and confidence.</p>
+          </div>
+          <div class="ct">
+            <div class="price">₹3,000/mo</div>
+            <a class="btn btn-p" href="contact.html#trial">Book a trial</a>
+          </div>
+        </article>
+
+        <article class="crow">
+          <img src="assets/images/home/h2-juniors.jpg" alt="Juniors players training" width="800" height="800" style="object-position:center 30%" loading="lazy" decoding="async">
+          <div>
+            <span class="eyebrow" style="margin:0">Ages 7–9</span>
+            <h3>Juniors</h3>
+            <p>Core skills: dribbling, passing and first touch in small-sided games.</p>
+          </div>
+          <div class="ct">
+            <div class="price">₹3,800/mo</div>
+            <a class="btn btn-p" href="contact.html#trial">Book a trial</a>
+          </div>
+        </article>
+
+        <article class="crow">
+          <img src="assets/images/home/h2-academy.jpg" alt="Academy players training" width="800" height="800" style="object-position:center 30%" loading="lazy" decoding="async">
+          <div>
+            <span class="eyebrow" style="margin:0">Ages 10–12</span>
+            <h3>Academy</h3>
+            <p>Positions, tactics and weekend match play in a team setting.</p>
+          </div>
+          <div class="ct">
+            <div class="price">₹4,800/mo</div>
+            <a class="btn btn-p" href="contact.html#trial">Book a trial</a>
+          </div>
+        </article>
+
+        <article class="crow">
+          <img src="assets/images/home/h2-elite.jpg" alt="Elite players training" width="800" height="800" style="object-position:center 30%" loading="lazy" decoding="async">
+          <div>
+            <span class="eyebrow" style="margin:0">Ages 13–16</span>
+            <h3>Elite</h3>
+            <p>High-performance training with fitness work and league fixtures.</p>
+          </div>
+          <div class="ct">
+            <div class="price">₹6,000/mo</div>
+            <a class="btn btn-p" href="contact.html#trial">Book a trial</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="sec alt">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">Match schedule</span>
+          <h2>Upcoming fixtures</h2>
+          <p>Parents can see every match in the dashboard.</p>
+        </div>
+        <div class="fx">
+          <div class="dt"><div><b>06</b><span>Dec</span></div></div>
+          <div>
+            <h3>Juniors vs Adyar Strikers</h3>
+            <p>Home · Kickstart Arena · 9:00 AM</p>
+          </div>
+          <span class="chip">Home</span>
+        </div>
+        <div class="fx">
+          <div class="dt"><div><b>13</b><span>Dec</span></div></div>
+          <div>
+            <h3>Academy vs Chennai Lions</h3>
+            <p>Away · Adyar Sports Ground · 4:30 PM</p>
+          </div>
+          <span class="chip">Away</span>
+        </div>
+        <div class="fx">
+          <div class="dt"><div><b>20</b><span>Dec</span></div></div>
+          <div>
+            <h3>Elite vs Marina FC</h3>
+            <p>Home · Kickstart Arena · 5:00 PM</p>
+          </div>
+          <span class="chip">Home</span>
+        </div>
+        <div class="fx">
+          <div class="dt"><div><b>27</b><span>Dec</span></div></div>
+          <div>
+            <h3>Little Kickers festival day</h3>
+            <p>Home · Kickstart Arena · 8:00 AM</p>
+          </div>
+          <span class="chip ok">Festival</span>
+        </div>
+        <div class="fx">
+          <div class="dt"><div><b>03</b><span>Jan</span></div></div>
+          <div>
+            <h3>Academy vs Velachery United</h3>
+            <p>Home · Kickstart Arena · 10:30 AM</p>
+          </div>
+          <span class="chip">Home</span>
+        </div>
+        <div class="btns" style="justify-content:center;margin-top:30px">
+          <a class="btn btn" href="login.html">Open parent dashboard <svg class="arr" viewBox="0 0 24 12" aria-hidden="true"><path d="M1 6h21M17 1l5 5-5 5"/></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">Gallery</span>
+          <h2>Moments from the pitch</h2>
+          <p>Training sessions, matches and match-day energy.</p>
+        </div>
+        <div class="gal">
+          <img src="assets/images/remote/pexels-20009466.jpeg" alt="Goalkeeper diving to save a goal during a match on a sunny day" style="object-position:center" loading="lazy" decoding="async">
+          <img src="assets/images/remote/pexels-23947005.jpeg" alt="Goalie making a save during a game at an outdoor stadium" style="object-position:center" loading="lazy" decoding="async">
+          <img src="assets/images/remote/pexels-19231097.jpeg" alt="Goalie making a mid-air catch on a green field" style="object-position:center" loading="lazy" decoding="async">
+          <img src="assets/images/remote/pexels-24279969.jpeg" alt="Young goalkeeper diving to save a ball during a practice match" style="object-position:center" loading="lazy" decoding="async">
+          <img src="assets/images/remote/pexels-31105970.jpeg" alt="Soccer player mid-kick on a sunny day" style="object-position:center" loading="lazy" decoding="async">
+          <img src="assets/images/remote/pexels-39095099.jpeg" alt="Two players competing for the ball on artificial turf" style="object-position:center" loading="lazy" decoding="async">
+        </div>
+      </div>
+    </section>
+
+    <section class="sec alt">
+      <div class="wrap">
+        <div class="split">
+          <div>
+            <div class="head l">
+              <span class="eyebrow">Parent dashboard</span>
+              <h2>The parent portal</h2>
+              <p>Everything for your family football calendar, in one login.</p>
+            </div>
+            <ul class="clist">
+              <li>Enroll one or more children in the right age program</li>
+              <li>Check attendance after every session</li>
+              <li>View upcoming matches and past results</li>
+            </ul>
+            <div class="btns" style="margin-top:26px">
+              <a class="btn btn-p" href="login.html">Parent login</a>
+              <a class="btn btn" href="dashboard.html">Preview dashboard <svg class="arr" viewBox="0 0 24 12" aria-hidden="true"><path d="M1 6h21M17 1l5 5-5 5"/></svg></a>
+            </div>
+          </div>
+          <div class="mock">
+            <div class="row"><b>Aarav · Academy</b><span>Attendance 92%</span></div>
+            <div class="bar"><i style="width:92%"></i></div>
+            <div class="row"><b>Meera · Juniors</b><span>Attendance 83%</span></div>
+            <div class="bar"><i style="width:83%"></i></div>
+            <div class="row"><b>Next match</b><span>Sat 9:00 AM vs Adyar Strikers</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="sec">
+      <div class="wrap">
+        <div class="head">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions parents ask</h2>
+          <p>Quick answers before you book a trial.</p>
+        </div>
+        <div class="faqw">
+          <details>
+            <summary>What age can my child start?</summary>
+            <p>From age 4. Our Little Kickers program is built for first-time players, and every program is grouped by age.</p>
+          </details>
+          <details>
+            <summary>Is there a free trial?</summary>
+            <p>Yes. Every child can join one free trial session. Book it from the Contact page and we will confirm the date.</p>
+          </details>
+          <details>
+            <summary>What should my child bring?</summary>
+            <p>Football boots or trainers, shin pads, a water bottle and weather-appropriate kit. Training bibs and balls are provided.</p>
+          </details>
+          <details>
+            <summary>How do parents follow progress?</summary>
+            <p>Through the parent dashboard: enroll children, check attendance and view match schedules in one place.</p>
+          </details>
+          <details>
+            <summary>What if my child misses a session?</summary>
+            <p>Sessions can be made up in another batch of the same age group within the term. Tell us through the dashboard or by phone.</p>
+          </details>
+          <details>
+            <summary>Are coaches qualified and checked?</summary>
+            <p>All coaches hold recognised football coaching licences, first-aid certificates and completed background checks.</p>
+          </details>
+        </div>
+        <div style="margin-top:48px">
+          <div class="cta">
+            <h2>Start with a <em>free trial</em></h2>
+            <p>Meet the coaches, try a session and see how your child enjoys it. No commitment.</p>
+            <div class="btns">
+              <a class="btn btn-p" href="contact.html#trial">Book a Free Trial</a>
+              <a class="btn btn-w" href="contact.html">Contact us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
